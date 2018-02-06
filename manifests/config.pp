@@ -18,6 +18,7 @@ class nginx::config (
   Boolean $service_hasstatus            = $::nginx::service_hasstatus,
   Boolean $service_hasrestart           = $::nginx::service_hasrestart,
   String $doc_root                      = $::nginx::doc_root,
+  String $log_dir                       = $::nginx::config_log_dir
 ) {
   file {'nginx_config':
     ensure  => file,
