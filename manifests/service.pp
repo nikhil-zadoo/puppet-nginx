@@ -11,7 +11,7 @@ class nginx::service (
     name       => $service_name,
     enable     => $service_enable,
     hasstatus  => $service_hasstatus,
-    hasrestart => $service+hasrestart,
+    hasrestart => $service_hasrestart,
     pattern    => $service_pattern,
   }
 }
